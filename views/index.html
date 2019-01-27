@@ -1,9 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+        <title>Burger Heaven</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>Hello World!!!</h1>
-    </body>
+      <main>
+        <h1>Welcome to BurgerHeaven Online</h1>
+      </main>
+      <section id="first">
+      <h3>Select burger</h3>
+      <p>This is where you select a burger</p>
+      <table>
+          <thead>
+              <tr>
+                  <th>Fire burger</th>
+                  <th>Big burger</th>
+                  <th>Small burger</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                  <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4409427.jpg" width="250">
+                </td>
+                <td>
+                  <img src="https://previews.123rf.com/images/nevodka/nevodka1209/nevodka120900011/15136354-big-hamburger-isolated-on-white.jpg" width="250">
+                </td>
+                <td>
+                  <img src="http://blog.delivery.com/wp-content/uploads/2010/11/tinyburger.jpg" width="140">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <li>Hot fire</li>
+                  <li>Great compliment to a glass of milk</li>
+                </td>
+                <td>
+                  <li>90% fat</li>
+                  <li>Go to the gym once in a while</li>
+                </td>
+                <td>
+                  <li>Low calories</li>
+                  <li>For kids or weak men</li>
+                </td>
+              </tr>
+          </tbody>
+      </table>
+      <p>
+        Burger choice<br>
+        <input type="radio" id="f" name="burger" value="fire" ><label for="f">Fire burger</label><br>
+        <input type="radio" id="b" name="burger" value="big"><label for="b">Big burger</label><br>
+        <input type="radio" id="s" name="burger" value="small"><label for="s">Small burger</label><br>
+      </p>
+    </section>
+    <section id="second">
+      <h3>Customer info</h3>
+      <p>This is where you provide necessart information</p>
+
+      <form>
+        <h4>Delivery info</h4>
+        <p>
+          <label for="Fullname">Full name</label><br>
+          <input type="text" id="Fullname" name="fn" required="required" placeholder="First- and lastname">
+        </p>
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+        </p>
+        <p>
+          <label for="street">Street</label><br>
+          <input type="text" id="street" name="st" placeholder="Street name">
+        </p>
+        <p>
+          <label for="house">House</label><br>
+          <input type="text" id="house" name="ho" placeholder="House number">
+        </p>
+        <p>
+          <label for="pay">Payment method</label><br>
+          <select id="pay" name="payment">
+            <option>Swish</option>
+            <option>Klarna</option>
+            <option>Credit card</option>
+          </select>
+        </p>
+        <p>
+          Gender<br>
+          <input type="radio" id="male" name="male" value="male" checked><label for="male">Male</label><br>
+          <input type="radio" id="female" name="male" value="female"><label for="female">Female</label><br>
+          <input type="radio" id="none" name="male" value="none"><label for="none">Do not wish to provide</label><br>
+        </p>
+
+      </form>
+      <button type="submit">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5waLIefgLPBm3ORwvnp6iYP9rYijP6PtoIjRnSaTeTyPd5hSzw" width="20">Submit
+      </button>
+    </section>
+    <footer>
+      <p>© Hypothetical burgers inc.</p>
+    </footer>
+  </body>
 </html>
