@@ -4,6 +4,9 @@
         <title>Burger Bay</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- <script src="https://vuejs.org/js/vue.js"></script>
+        <script src="js/js_script.js"></script>
+        <script src="js/vue_script.js"></script> -->
     </head>
 
     <body>
@@ -14,97 +17,94 @@
       </section>
 
       <section class="first">
-      <h2>Select burger</h2>
-      <p>This is where you select a burger</p>
-      <div class="wrapper">
-        <div class="box a">
-          <h2>Fire burger</h2>
+        <div class="firstText">
+          <h2>Select burger</h2>
+          <p>This is where you select a burger</p>
+          <div class="wrapper">
+            <div class="box a">
+              <h2>Fire burger</h2>
+              <p>
+                <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KzXAxg1n5JTHwl6LtLTRPnBmBOd29vlsg0uJiBod_o5J9Tmp" width="330">
+              </p>
+              <li>Hot fire</li>
+              <li>Great compliment to a glass of milk</li>
+              <li>Contains <span class="allergies">Chili</span></li>
+              <li>Contains <span class="allergies">Gluten</span></li>
+            </div>
+
+            <div class="box b">
+              <h2>Big burger</h2>
+              <p>
+                <image src="http://www.zarksburgers.ph/wp-content/uploads/2017/08/IMG_0052.jpg" width="300">
+                </p>
+                <li>90% fat</li>
+                <li>Go to the gym once in a while</li>
+                <li>Contains <span class="allergies">Peanuts</span></li>
+                <li>Contains <span class="allergies">Gluten</span></li>
+            </div>
+
+            <div class="box c">
+              <h2>Small burger</h2>
+              <p>
+                <image src="http://blog.delivery.com/wp-content/uploads/2010/11/tinyburger.jpg" width="220">
+                </p>
+                <li>Low calories</li>
+                <li>For kids, weak men or women</li>
+                <li>May contain traces of <span class="allergies">Mini carrots</span></li>
+              </div>
+          </div>
+
           <p>
-            <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KzXAxg1n5JTHwl6LtLTRPnBmBOd29vlsg0uJiBod_o5J9Tmp" width="330">
+            <span id="bchoice">Burger choice</span><br>
+            <input type="radio" id="f" name="burger" value="fire" ><label for="f">Fire burger</label><br>
+            <input type="radio" id="b" name="burger" value="big"><label for="b">Big burger</label><br>
+            <input type="radio" id="s" name="burger" value="small"><label for="s">Small burger</label><br>
           </p>
-          <li>Hot fire</li>
-          <li>Great compliment to a glass of milk</li>
-          <li>Contains <span class="allergies">Chili</span></li>
-          <li>Contains <span class="allergies">Gluten</span></li>
-
         </div>
-
-        <div class="box b">
-          <h2>Big burger</h2>
-          <p>
-            <image src="http://www.zarksburgers.ph/wp-content/uploads/2017/08/IMG_0052.jpg" width="300">
-          </p>
-          <li>90% fat</li>
-          <li>Go to the gym once in a while</li>
-          <li>Contains <span class="allergies">Peanuts</span></li>
-          <li>Contains <span class="allergies">Gluten</span></li>
-        </div>
-
-        <div class="box c">
-          <h2>Small burger</h2>
-          <p>
-            <image src="http://blog.delivery.com/wp-content/uploads/2010/11/tinyburger.jpg" width="220">
-          </p>
-          <li>Low calories</li>
-          <li>For kids, weak men or women</li>
-          <li>May contain traces of <span class="allergies">Mini carrots</span></li>
-        </div>
-      </div>
-
-      <p>
-        <span id="bchoice">Burger choice</span><br>
-        <input type="radio" id="f" name="burger" value="fire" ><label for="f">Fire burger</label><br>
-        <input type="radio" id="b" name="burger" value="big"><label for="b">Big burger</label><br>
-        <input type="radio" id="s" name="burger" value="small"><label for="s">Small burger</label><br>
-      </p>
-
     </section>
 
     <section class="second">
       <div class="secondText">
-      <h3>Customer info</h3>
-      <p>This is where you provide necessary information</p>
-      <h4>Delivery info</h4>
+        <h3>Customer info</h3>
+        <p>This is where you provide necessary information</p>
+        <h4>Delivery info</h4>
 
-      <form>
-        <p>
-          <label for="Fullname">Full name</label><br>
-          <input type="text" id="Fullname" name="fn" required="required" placeholder="First- and lastname">
-        </p>
-        <p>
-          <label for="email">Email</label><br>
-          <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
-        </p>
-        <p>
-          <label for="street">Street</label><br>
-          <input type="text" id="street" name="st" placeholder="Street name">
-        </p>
-        <p>
-          <label for="house">House</label><br>
-          <input type="text" id="house" name="ho" placeholder="House number">
-        </p>
-        <p>
-          <label for="pay">Payment method</label><br>
-          <select id="pay" name="payment">
-            <option>Swish</option>
-            <option>Klarna</option>
-            <option>Credit card</option>
-          </select>
-        </p>
-        <p>
-          Gender<br>
-          <input type="radio" id="male" name="male" value="male" checked><label for="male">Male</label><br>
-          <input type="radio" id="female" name="male" value="female"><label for="female">Female</label><br>
-          <input type="radio" id="none" name="male" value="none"><label for="none">Do not wish to provide</label><br>
-        </p>
-
-      </form>
+        <form>
+          <p>
+            <label for="Fullname">Full name</label><br>
+            <input type="text" id="Fullname" name="fn" required="required" placeholder="First- and lastname">
+          </p>
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+          </p>
+          <p>
+            <label for="street">Street</label><br>
+            <input type="text" id="street" name="st" placeholder="Street name">
+          </p>
+          <p>
+            <label for="house">House</label><br>
+            <input type="number" id="house" name="ho" placeholder="House number">
+          </p>
+          <p>
+            <label for="pay">Payment method</label><br>
+            <select id="pay" name="payment">
+              <option>Swish</option>
+              <option>Klarna</option>
+              <option>Credit card</option>
+            </select>
+          </p>
+          <p>
+            Gender<br>
+            <input type="radio" id="male" name="male" value="male" checked><label for="male">Male</label><br>
+            <input type="radio" id="female" name="male" value="female"><label for="female">Female</label><br>
+            <input type="radio" id="none" name="male" value="none"><label for="none">Do not wish to provide</label><br>
+          </p>
+        </form>
+        <button type="submit">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5waLIefgLPBm3ORwvnp6iYP9rYijP6PtoIjRnSaTeTyPd5hSzw" width="10">Submit
+        </button>
       </div>
-    </section>
-    <section class="button">
-      <button type="submit">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5waLIefgLPBm3ORwvnp6iYP9rYijP6PtoIjRnSaTeTyPd5hSzw" width="20">Submit
-      </button>
     </section>
     <footer id="fot">
       <p>© Hypothetical burgers inc.</p>
