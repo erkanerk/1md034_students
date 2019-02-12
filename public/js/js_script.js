@@ -72,8 +72,6 @@ function burgerOrder() {
 function getInfo() {
   var name = document.getElementsByName("fn")[0].value;
   var email = document.getElementsByName("em")[0].value;
-  var gatuadress = document.getElementsByName("st")[0].value;
-  var husnummer = document.getElementsByName("ho")[0].value;
   var betalmetod = document.getElementsByName("payment")[0].value;
 
   var genderArray = document.getElementsByName("male");
@@ -85,11 +83,12 @@ function getInfo() {
   }
 
   var burgers = burgerOrder();
-  var allInfo = [name, email, gatuadress, husnummer, betalmetod, gender, burgers];
+  var allInfo = [name, email, betalmetod, gender, burgers];
   return allInfo;
 }
 
 function printOrder() {
+  /*
   document.getElementById("bekrJS").innerHTML = "";
   var info = getInfo();
   var order = document.getElementById("bekrJS");
@@ -109,21 +108,13 @@ function printOrder() {
   email.appendChild(document.createTextNode("Email: " + info[1]));
   order.appendChild(email);
 
-  var gatuadress = document.createElement("p");
-  gatuadress.appendChild(document.createTextNode("Street: " + info[2]));
-  order.appendChild(gatuadress);
-
-  var husnummer = document.createElement("p");
-  husnummer.appendChild(document.createTextNode("House: " + info[3]));
-  order.appendChild(husnummer);
-
   var betalmetod = document.createElement("p");
-  betalmetod.appendChild(document.createTextNode("Payment method: " + info[4]));
+  betalmetod.appendChild(document.createTextNode("Payment method: " + info[2]));
   order.appendChild(betalmetod);
 
   var gender = document.createElement("p");
-  gender.appendChild(document.createTextNode("Gender: " + info[5]));
+  gender.appendChild(document.createTextNode("Gender: " + info[3]));
   order.appendChild(gender);
-
+*/
 
 }

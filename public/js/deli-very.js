@@ -1,6 +1,8 @@
 /*jslint es5:true, indent: 2 */
 /*global Vue, io */
 /* exported vm */
+
+/*
 'use strict';
 var socket = io();
 
@@ -26,6 +28,7 @@ var vm = new Vue({
       return lastOrder + 1;
     },
     addOrder: function (event) {
+      console.log("yo");
       var offset = {x: event.currentTarget.getBoundingClientRect().left,
                     y: event.currentTarget.getBoundingClientRect().top};
       socket.emit("addOrder", { orderId: this.getNext(),
@@ -36,3 +39,4 @@ var vm = new Vue({
     }
   }
 });
+*/
